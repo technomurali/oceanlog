@@ -204,15 +204,6 @@ UI/uploaded_image_files/
 UI/video_outputs/
 UI/model_inference/outputs/
 
-# Model files (if they're large)
-UI/models/*.pth
-UI/models/*.pt
-UI/models/*.onnx
-UI/models/*.pb
-UI/models/*.h5
-UI/models/*.hdf5
-UI/models/*.pkl
-UI/models/*.joblib
 
 # Temporary files
 *.tmp
