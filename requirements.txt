@@ -1,0 +1,45 @@
+# Nava Ocean Log - Requirements
+# Core dependencies for the AI-powered container tracking system
+
+# Web Framework
+streamlit>=1.28.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Object Detection
+ultralytics>=8.0.0
+
+# OCR Processing
+paddleocr>=2.7.0
+paddlepaddle>=2.5.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# File and Path Handling
+pathlib2>=2.3.7
+
+# System and Utilities
+psutil>=5.9.0
+Pillow>=10.0.0
+
+# Logging and Monitoring
+python-json-logger>=2.0.7
+
+# Development and Testing (optional)
+# pytest>=7.4.0
+# black>=23.0.0
+# isort>=5.12.0
+# flake8>=6.0.0
+
+# Production Dependencies (optional)
+# gunicorn>=21.0.0
+# prometheus-client>=0.17.0 
