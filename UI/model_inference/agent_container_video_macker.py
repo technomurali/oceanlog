@@ -11,6 +11,9 @@ def container_back_video_gen(video_path: str) -> str:
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = YOLO(model_path).to(device)
+    
+    print(f"[INFO] Process PID: {os.getpid()} - Use this PID for GPU monitoring")
+    print(f"[INFO] Device: {device}")
 
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
@@ -57,6 +60,9 @@ def container_back_label_gen(video_path: str) -> str:
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = YOLO(model_path).to(device)
+    
+    print(f"[INFO] Process PID: {os.getpid()} - Use this PID for GPU monitoring")
+    print(f"[INFO] Device: {device}")
 
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():

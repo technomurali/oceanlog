@@ -53,8 +53,10 @@ def detect_and_crop_container_backs(
     if use_cuda:
         gpu_name = torch.cuda.get_device_name(0)
         print(f"[INIT] Running on GPU: {gpu_name}")
+        print(f"[INIT] Process PID: {os.getpid()} - Use this PID for GPU monitoring")
     else:
         print("[INIT] Running on CPU")
+        print(f"[INIT] Process PID: {os.getpid()}")
 
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
